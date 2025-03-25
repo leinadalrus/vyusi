@@ -11,9 +11,9 @@ defineProps({
 
 <template>
     <TradingCard
-        v-bind:title="productItem.title"
-        v-bind:description="productItem.description"
-        v-bind:flavour="productItem.flavour"
-        v-bind:image="productItem.image"
+        v-bind:title="card.title"
+        v-bind:description="card.description"
+        v-bind:flavour="card.flavour"
+        v-bind:image="card.image"
     />
 </template>
