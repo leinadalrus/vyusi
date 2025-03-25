@@ -34,7 +34,7 @@ defineProps({
     </article>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #card-base {
     margin-top: 1rem;
     display: flex;

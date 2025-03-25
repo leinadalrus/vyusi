@@ -1,7 +1,10 @@
 <script setup>
+import DashboardView from './DashboardView.vue';
+
 </script>
 
 <template>
-  <main>
-  </main>
+    <DashboardView />
 </template>
+
+<style scoped lang="scss"></style>
