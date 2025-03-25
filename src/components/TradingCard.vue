@@ -1,4 +1,6 @@
 <script setup>
+import HeroImage from './HeroImage.vue';
+
 defineProps({
     title: {
         type: String,
@@ -13,9 +15,7 @@ defineProps({
         required: true
     },
     image: {
-        type: String,
-        url: String,
-        alt: String,
+        type: HeroImage,
         required: true
     }
 })
@@ -23,7 +23,7 @@ defineProps({
 
 <template>
     <article id="card-base" class="">
-        <img v-bind:src="image.url" v-bind:alt="image.alt" class="" />
+        <img v-bind:src="image.src" v-bind:alt="image.alt" class="" />
 
         <h1 class="">{{ title }}</h1>
 
