@@ -43,7 +43,7 @@ const imageAlt = ref(props.product.card.image.alt)
 
         <input type="image" v-bind:src="imageSrc" v-bind:alt="imageAlt" />
 
-        <button type="submit">Update my product item</button>
+        <button type="submit" @click="$emit('submitted')">Post My Product</button>
     </form>
 </template>
 

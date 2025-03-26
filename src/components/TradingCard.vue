@@ -1,5 +1,5 @@
 <script setup>
-import HeroImage from './HeroImage.vue';
+import HeroImage from './HeroImage.vue'
 
 defineProps({
     title: {
