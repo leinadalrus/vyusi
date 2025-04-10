@@ -2,7 +2,7 @@
 import HeroImage from '@/components/HeroImage.vue'
 import { ref } from 'vue'
 
-defineEmits(['submitted', 'submission'])
+defineEmits(['submitted', 'submission', 'rememberedMe'])
 
 const props = defineProps({
     image: { type: HeroImage },
@@ -62,12 +62,11 @@ function verifyPassword(password) {
             "
         />
 
-        <label for="checkbox">{{ checked }}</label>
         <input
             type="checkbox"
-            id="checkbox"
-            v-model="checked"
-            @click="$emit('checked')"
+            id="remember-me-checkbox"
+            v-model="rememberedMe"
+            @click="$emit('rememberedMe')"
         />
 
         <button type="submit" @click="$emit('submission')">
